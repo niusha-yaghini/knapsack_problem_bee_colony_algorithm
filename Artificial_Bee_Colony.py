@@ -6,7 +6,7 @@ import copy
 class ABC_algorithm():
     # artificial bee colony algorithm 
 
-    def __init__(self, population_num, nK, nI, Capacity, Profits, Weights, onlooker_bees_num, Max_imporovement_try, pc, pm, k_tournomet_percent):
+    def __init__(self, population_num, nK, nI, Capacity, Profits, Weights, onlooker_bees_num, Max_imporovement_try, pc, pm, k_tournomet_percent, percedure_type):
         self.employed_bees_num = population_num
         self.knapsacks = nK
         self.items = nI
@@ -18,6 +18,7 @@ class ABC_algorithm():
         self.crossover_probbility = pc
         self.mutation_probblity = pm/self.items
         self.k_tournoment = int(k_tournomet_percent*self.items)
+        self.percedure_type = percedure_type
           
     def employed_bees(self, population):
         # making initial random answers (equal to amount of employed bees number)
@@ -79,11 +80,13 @@ class ABC_algorithm():
         
         for i in range(self.onlooker_bees_num):
             
-            # # selecting the bee by roulette wheel
-            # bee = self._roulette_wheel(population, sum_of_fitnesses)
-            
-            # sele a bee by tournoment procedure
-            bee = self._tournoment(population)
+            if (self.percedure_type == "Roulette Wheel"):
+                # selecting the bee by roulette wheel
+                bee = self._roulette_wheel(population, sum_of_fitnesses)
+
+            elif(self.percedure_type == "Tournoment"):
+                # sele a bee by tournoment procedure
+                bee = self._tournoment(population)
             
             # we try for improvement one time for each bee, if change happens we add one to improvement-try property of that bee
             change_flag = self._try_for_improvement(population, bee)
