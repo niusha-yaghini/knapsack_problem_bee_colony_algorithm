@@ -1,0 +1,46 @@
+Artificial Bee Colony Algorithm 
+ 
+iteration number 1: 
+best bee => data: [0. 1. 1. 0. 0. 1.], fitness: 3800.0
+best fitness so far: 3800.0
+Execution time of iteration: 0.6451828479766846 seconds
+ 
+iteration number 2: 
+best bee => data: [0. 1. 1. 0. 0. 1.], fitness: 3800.0
+best fitness so far: 3800.0
+Execution time of iteration: 0.25864338874816895 seconds
+ 
+iteration number 3: 
+best bee => data: [0. 1. 1. 0. 0. 1.], fitness: 3800.0
+best fitness so far: 3800.0
+Execution time of iteration: 0.19864130020141602 seconds
+ 
+FINAL RESULT 
+ 
+the best final Bee => 
+data: [0. 1. 1. 0. 0. 1.], fitness: 3800.0 
+the average fitness of all: 3800.0 
+ 
+Execution time of all: 1.1024675369262695 seconds 
+ 
+------------------------ 
+COMPARE ANSWER 
+ 
+real answer = 3800.0
+my answer = 3800.0 
+gap = 0.0
+gap percent = 0.0
+ 
+------------------------ 
+PARAMETERS 
+ 
+Number of Employed Bees = 1000
+Number of Onlooker Bees = 100
+Max improvement try = 50
+cross_over type = one_point
+Probblity of cross-over = 0.7
+Probblity of mutation = 2
+K tournoment percent = 0.1
+Precedure Type = Roulette Wheel
+Number of ABC algorithm's iterations = 4
+Limited Time = 1

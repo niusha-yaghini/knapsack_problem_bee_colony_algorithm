@@ -1,0 +1,91 @@
+Artificial Bee Colony Algorithm 
+ 
+iteration number 1: 
+best bee => data: [0.0, 1.0, 0, 1.0, 1, 0.0, 0.0, 1.0, 0.0, 1.0], fitness: 8706.1
+best fitness so far: 8706.1
+Execution time of iteration: 1.0008659362792969 seconds
+ 
+iteration number 2: 
+best bee => data: [0.0, 1.0, 0, 1.0, 1, 0.0, 0.0, 1.0, 0.0, 1.0], fitness: 8706.1
+best fitness so far: 8706.1
+Execution time of iteration: 0.3595452308654785 seconds
+ 
+iteration number 3: 
+best bee => data: [0.0, 1.0, 0, 1, 1.0, 0, 0, 1.0, 0.0, 1], fitness: 8706.1
+best fitness so far: 8706.1
+Execution time of iteration: 0.28500890731811523 seconds
+ 
+iteration number 4: 
+best bee => data: [0.0, 1.0, 0, 1, 1.0, 0, 0, 1.0, 0.0, 1], fitness: 8706.1
+best fitness so far: 8706.1
+Execution time of iteration: 0.3255171775817871 seconds
+ 
+iteration number 5: 
+best bee => data: [0, 1, 0.0, 1, 1, 0.0, 0, 1.0, 0.0, 1.0], fitness: 8706.1
+best fitness so far: 8706.1
+Execution time of iteration: 0.31137967109680176 seconds
+ 
+iteration number 6: 
+best bee => data: [0, 1, 0.0, 1, 1, 0.0, 0, 1.0, 0.0, 1.0], fitness: 8706.1
+best fitness so far: 8706.1
+Execution time of iteration: 0.35317087173461914 seconds
+ 
+iteration number 7: 
+best bee => data: [0, 1, 0.0, 1, 1, 0.0, 0, 1.0, 0.0, 1.0], fitness: 8706.1
+best fitness so far: 8706.1
+Execution time of iteration: 0.31473445892333984 seconds
+ 
+iteration number 8: 
+best bee => data: [0, 1, 0.0, 1, 1, 0.0, 0, 1.0, 0.0, 1.0], fitness: 8706.1
+best fitness so far: 8706.1
+Execution time of iteration: 0.4711494445800781 seconds
+ 
+iteration number 9: 
+best bee => data: [0, 1, 0.0, 1, 1, 0.0, 0, 1.0, 0.0, 1.0], fitness: 8706.1
+best fitness so far: 8706.1
+Execution time of iteration: 0.6515698432922363 seconds
+ 
+iteration number 10: 
+best bee => data: [0, 1, 0.0, 1, 1, 0.0, 0, 1.0, 0.0, 1.0], fitness: 8706.1
+best fitness so far: 8706.1
+Execution time of iteration: 0.3605482578277588 seconds
+ 
+iteration number 11: 
+best bee => data: [0, 1, 0.0, 1, 1, 0.0, 0, 1.0, 0.0, 1.0], fitness: 8706.1
+best fitness so far: 8706.1
+Execution time of iteration: 0.39998292922973633 seconds
+ 
+iteration number 12: 
+best bee => data: [0, 1, 0.0, 1, 1, 0.0, 0, 1.0, 0.0, 1.0], fitness: 8706.1
+best fitness so far: 8706.1
+Execution time of iteration: 0.3467416763305664 seconds
+ 
+FINAL RESULT 
+ 
+the best final Bee => 
+data: [0, 1, 0.0, 1, 1, 0.0, 0, 1.0, 0.0, 1.0], fitness: 8706.1 
+the average fitness of all: 8706.100000000002 
+ 
+Execution time of all: 5.242834806442261 seconds 
+ 
+------------------------ 
+COMPARE ANSWER 
+ 
+real answer = 8706.1
+my answer = 8706.1 
+gap = 0.0
+gap percent = 0.0
+ 
+------------------------ 
+PARAMETERS 
+ 
+Number of Employed Bees = 1000
+Number of Onlooker Bees = 100
+Max improvement try = 50
+cross_over type = one_point
+Probblity of cross-over = 0.7
+Probblity of mutation = 2
+K tournoment percent = 0.1
+Precedure Type = Roulette Wheel
+Number of ABC algorithm's iterations = 13
+Limited Time = 5
