@@ -52,24 +52,15 @@ class ABC_algorithm():
             x = random.randint(0, self.items-1)
             if(new_bee.data[x]==0):
                 new_bee.data[x] = 1
-                capacity_flag = self._validality_check(new_bee)
+                capacity_flag = self._feasiblity_check(new_bee)
                 if(capacity_flag):
                     bee.data[x] = 1
                 
         return bee
                 
-    def _validality_check(self, bee):
-        # checking validality of the answers that has been made (capacity)
+    def _feasiblity_check(self, bee):
+        # checking feasiblity of the answers that has been made (capacity)
         
-        # for j in range(self.knapsacks):
-        #     current_capacity = self.capacity[j]
-        #     my_capacity = 0
-        #     for i in range(self.items):
-        #         if (bee.data[i]==1):
-        #             my_capacity += self.weights[j][i]
-        #     if(my_capacity>current_capacity):
-        #         return False
-        # return True
         # Convert bee.data to a NumPy array if it's not already
         bee_data_np = np.array(bee.data)
 
@@ -111,15 +102,17 @@ class ABC_algorithm():
                 bee.improvement_try += 1
                                                         
     def scout_bees(self, population):
-        delete_bees = []
-        new_bees = []
-        for bee in population:
-            if(bee.improvement_try>=self.Max_imporovement_try):
-                delete_bees.append(bee)
-                new_bees.append(self._making_bee())
-        for i in range(len(delete_bees)):
-            population.remove(delete_bees[i])
-            population.append(new_bees[i])
+        # in here we select all bees that have a improvement_try larger than max_improvement try,
+        # and delete them and replace them with brand new bees
+        
+        improvement_try_array = np.array([bee.improvement_try for bee in population])
+        delete_mask = improvement_try_array >= self.Max_imporovement_try
+
+        delete_bees = np.array(population)[delete_mask]
+        new_bees = np.array([self._making_bee() for _ in range(delete_mask.sum())])
+
+        population = [bee for bee in population if bee not in delete_bees]
+        population.extend(new_bees)
                     
     def _try_for_improvement(self, population, bee):
         # we do the cross over and mutation here
@@ -142,7 +135,7 @@ class ABC_algorithm():
             # 2) then we check the improvement, if there wasn't any, we pass new_bee to "demon_action" function,
                     # but if there was a improvement we rise the change_flag
                     
-        if(self._validality_check(new_bee)):
+        if(self._feasiblity_check(new_bee)):
             # if(self._improvement_check(bee, new_bee)):
             #     change_flag = True
             if(self._improvement_check(bee, new_bee)==False):
@@ -180,7 +173,7 @@ class ABC_algorithm():
                 
             if(demon_bee.data[x]==0):
                 demon_bee.data[x] = 1
-                feasiblity_flag = self._validality_check(demon_bee)
+                feasiblity_flag = self._feasiblity_check(demon_bee)
 
                 if(feasiblity_flag):
                     bee.data[x] = 1
@@ -191,17 +184,15 @@ class ABC_algorithm():
         # we check the probability and do the change, we go through this until we reach to a feasible answer
         
         feasiblity_flag = False
-        while(feasiblity_flag==False):    
-            # for i in range(self.items):        
-            #     x = random.random()
-            #     if(x<=self.set_to_zero_probability):
-        #         bee.data[i]=0 if bee.data[i]==1 else 0
+        while(feasiblity_flag==False):  
+            # a list of random numbers  
             random_numbers = np.random.random(size=self.items)
+            # a boolean
             zero_mask = random_numbers <= self.set_to_zero_probability
-            # bee.data[zero_mask] = 0 if bee.data[zero_mask] == 1 else 0
+            # it checks where ever the random_number is equal or less than set_to_zero_probability, it set that index of bee.data to 0
             bee.data = np.where(zero_mask, 0, bee.data)
             
-            feasiblity_flag = self._validality_check(bee)
+            feasiblity_flag = self._feasiblity_check(bee)
             
     def _tournoment(self, population):
         tournoment_list = []
@@ -238,7 +229,7 @@ class ABC_algorithm():
 
         if(x<=self.crossover_probability):
             # choosing a random position for change
-            random_pos = random.randint(2, self.items-1)
+            random_pos = random.randint(1, self.items-1)
             
             # choosing a neighbor, and it does not matter if it is the bee itself
             neighbor_bee = random.choice(population)
@@ -246,15 +237,10 @@ class ABC_algorithm():
             self.replace_terms(bee, neighbor_bee, random_pos)
         
     def replace_terms(self, bee, neighbor_bee, random_pos):
-        # in here we change parts of our choromosome base on choosed term
+        # in here we change parts of our "bee.data" base on choosed position,
+        # the first part comes from bee.data, and the second part comes from neighbor.data 
         
-        data = []
-        for i in range(random_pos):
-            data.append(bee.data[i])
-        for j in range(random_pos, self.items):
-            data.append(neighbor_bee.data[j])
-        
-        bee.data = data
+        bee.data[random_pos:] = neighbor_bee.data[random_pos:].copy()
                 
     def _cross_over(self, population, bee):
         # for each answer that employed bees have made, we select a radom neighbor

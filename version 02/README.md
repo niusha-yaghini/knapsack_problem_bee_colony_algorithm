@@ -41,3 +41,18 @@ to make a random valid new bee and add it to our "population"
         # after the above logic we would have a 1-"feasible and improvemented answer" or a 
                                               # 2-"feasible and don't know the improvement answer"
         # so we check the improvement again 
+
+
+        and changed the structure of "make_feasible" function, with numpy
+
+        and changed the structure of "demon_action" function, with numpy
+
+        and changed the structure of "feasiblity_check" function, with numpy
+
+        and changed the structure of "scout" function, with numpy
+
+        and changed the structure of "calculating_fitness" function, with numpy
+
+        and changed the structure of "cross over -> replacement_terms" function, with numpy
+
+        

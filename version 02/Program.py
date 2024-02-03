@@ -59,9 +59,8 @@ def Bee_Colony_Algorithm():
     return best_bees_of_each_inner_iteration, best_fitnesses_of_each_inner_iteration, best_fitnesses_so_far, iteration_num
 
 
-if __name__ == '__main__':
-    
-    employed_bees_num = 100  # number of total bees => npop/2 = amount of first population
+if __name__ == '__main__':    
+    employed_bees_num = 10  # number of total bees => npop/2 = amount of first population
                          # this must be an even number 
     onlooker_bees_num = 50   # number of iterations in roulette wheel, that select a bee and pass it to improvement-try
     max_improvement_try = 50
@@ -78,12 +77,12 @@ if __name__ == '__main__':
     
     # file name of the datas
     # data_file_name = ".\\mknapcb9\\Question\\01.txt"
-    data_file_name = ".\\petersen\\mknap1-Question\\07.txt"
+    data_file_name = ".\\petersen\\mknap1-Question\\01.txt"
     
     # file name for save results
     # result_file_name = ".\\mknapcb9\\Answer\\01.txt"
-    result_file_name = ".\\petersen\\mknap1-Answer(try1)\\07-v.txt"
-    photo_name = "07-v"
+    result_file_name = ".\\petersen\\mknap1-Answer(try1)\\01-test.txt"
+    photo_name = "07-test"
 
     # nK = number of knapstacks
     # nI = number of items
