@@ -1,0 +1,341 @@
+Artificial Bee Colony Algorithm 
+ 
+iteration number 1: 
+best bee => data: [1.0, 0.0, 0.0, 1, 0.0, 1.0, 1.0, 1.0, 1.0, 0, 1.0, 1.0, 1, 1.0, 1.0, 1, 1.0, 1.0, 1.0, 0, 0.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 0.0, 1.0, 1.0, 1.0, 1.0], fitness: 10352.0
+best fitness so far: 10352.0
+Execution time of iteration: 4.692316770553589 seconds
+ 
+iteration number 2: 
+best bee => data: [1.0, 0.0, 0.0, 1, 0.0, 1.0, 1.0, 1.0, 1.0, 0, 1.0, 1.0, 1, 1.0, 1.0, 1, 1.0, 1.0, 1.0, 0, 0.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 0.0, 1.0, 1.0, 1.0, 1.0], fitness: 10352.0
+best fitness so far: 10352.0
+Execution time of iteration: 1.5453734397888184 seconds
+ 
+iteration number 3: 
+best bee => data: [1.0, 0.0, 0.0, 1, 0.0, 1.0, 1.0, 1.0, 1.0, 0, 1.0, 1.0, 1, 1.0, 1.0, 1, 1.0, 1.0, 1.0, 0, 0.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 0.0, 1.0, 1.0, 1.0, 1.0], fitness: 10352.0
+best fitness so far: 10352.0
+Execution time of iteration: 1.4904639720916748 seconds
+ 
+iteration number 4: 
+best bee => data: [1.0, 0, 0.0, 1.0, 0.0, 1.0, 1, 1.0, 0.0, 0, 1.0, 0.0, 1, 1.0, 1, 1.0, 1.0, 1, 0.0, 1, 1.0, 1, 1.0, 0.0, 1, 1, 1, 1.0, 1, 1, 1, 1.0, 1, 1.0, 0.0, 0.0, 1, 0, 1], fitness: 10429.0
+best fitness so far: 10429.0
+Execution time of iteration: 1.8252441883087158 seconds
+ 
+iteration number 5: 
+best bee => data: [0, 0.0, 0.0, 1.0, 0.0, 1, 1.0, 1, 1, 0.0, 1.0, 1.0, 1.0, 1, 1.0, 1, 1.0, 1.0, 1.0, 1.0, 1, 1.0, 1.0, 1, 1.0, 1, 1.0, 1.0, 1.0, 1, 1, 1, 1.0, 0, 1.0, 1.0, 1.0, 1, 1], fitness: 10444.0
+best fitness so far: 10444.0
+Execution time of iteration: 1.707207202911377 seconds
+ 
+iteration number 6: 
+best bee => data: [0, 0.0, 0.0, 1.0, 0.0, 1, 1.0, 1, 1, 0.0, 1.0, 1.0, 1.0, 1, 1.0, 1, 1.0, 1.0, 1.0, 1.0, 1, 1.0, 1.0, 1, 1.0, 1, 1.0, 1.0, 1.0, 1, 1, 1, 1.0, 0, 1.0, 1.0, 1.0, 1, 1], fitness: 10444.0
+best fitness so far: 10444.0
+Execution time of iteration: 1.4009709358215332 seconds
+ 
+iteration number 7: 
+best bee => data: [0, 0.0, 0.0, 1.0, 0.0, 1, 1.0, 1, 1, 0.0, 1.0, 1.0, 1.0, 1, 1.0, 1, 1.0, 1.0, 1.0, 1.0, 1, 1.0, 1.0, 1, 1.0, 1, 1.0, 1.0, 1.0, 1, 1, 1, 1.0, 0, 1.0, 1.0, 1.0, 1, 1], fitness: 10444.0
+best fitness so far: 10444.0
+Execution time of iteration: 1.526010274887085 seconds
+ 
+iteration number 8: 
+best bee => data: [1.0, 1, 0, 1, 0.0, 1, 1, 1, 1, 0.0, 1, 0, 1, 1.0, 1, 1.0, 1, 1.0, 1.0, 1, 0, 1, 0, 1, 0, 1.0, 1.0, 1, 1, 1, 1.0, 1, 0, 1.0, 0, 0, 1.0, 1, 1], fitness: 10476.0
+best fitness so far: 10476.0
+Execution time of iteration: 1.6402008533477783 seconds
+ 
+iteration number 9: 
+best bee => data: [1.0, 1, 0, 1, 0.0, 1, 1, 1, 1, 0.0, 1, 0, 1, 1.0, 1, 1.0, 1, 1.0, 1.0, 1, 0, 1, 0, 1, 0, 1.0, 1.0, 1, 1, 1, 1.0, 1, 0, 1.0, 0, 0, 1.0, 1, 1], fitness: 10476.0
+best fitness so far: 10476.0
+Execution time of iteration: 1.6114544868469238 seconds
+ 
+iteration number 10: 
+best bee => data: [1.0, 1, 0, 1, 0.0, 1, 1, 1, 1, 0.0, 1, 0, 1, 1.0, 1, 1.0, 1, 1.0, 1.0, 1, 0, 1, 0, 1, 0, 1.0, 1.0, 1, 1, 1, 1.0, 1, 0, 1.0, 0, 0, 1.0, 1, 1], fitness: 10476.0
+best fitness so far: 10476.0
+Execution time of iteration: 1.4199316501617432 seconds
+ 
+iteration number 11: 
+best bee => data: [1.0, 1, 0, 1, 0.0, 1, 1, 1, 1, 0.0, 1, 0, 1, 1.0, 1, 1.0, 1, 1.0, 1.0, 1, 0, 1, 0, 1, 0, 1.0, 1.0, 1, 1, 1, 1.0, 1, 0, 1.0, 0, 0, 1.0, 1, 1], fitness: 10476.0
+best fitness so far: 10476.0
+Execution time of iteration: 1.5758826732635498 seconds
+ 
+iteration number 12: 
+best bee => data: [1.0, 1, 0, 1, 0.0, 1, 1, 1, 1, 0.0, 1, 0, 1, 1.0, 1, 1.0, 1, 1.0, 1.0, 1, 0, 1, 0, 1, 0, 1.0, 1.0, 1, 1, 1, 1.0, 1, 0, 1.0, 0, 0, 1.0, 1, 1], fitness: 10476.0
+best fitness so far: 10476.0
+Execution time of iteration: 1.7252190113067627 seconds
+ 
+iteration number 13: 
+best bee => data: [0, 1, 0, 1, 0, 1, 1.0, 1, 1.0, 0, 1, 1, 1, 1.0, 1.0, 1.0, 1, 1, 1.0, 1, 0, 0, 1.0, 1, 1, 1, 1.0, 1, 1, 1, 0, 1.0, 0, 1, 1, 1, 1, 1, 1], fitness: 10513.0
+best fitness so far: 10513.0
+Execution time of iteration: 1.4195101261138916 seconds
+ 
+iteration number 14: 
+best bee => data: [0, 1, 0, 1, 0, 1, 1.0, 1, 1.0, 0, 1, 1, 1, 1.0, 1.0, 1.0, 1, 1, 1.0, 1, 0, 0, 1.0, 1, 1, 1, 1.0, 1, 1, 1, 0, 1.0, 0, 1, 1, 1, 1, 1, 1], fitness: 10513.0
+best fitness so far: 10513.0
+Execution time of iteration: 1.3477013111114502 seconds
+ 
+iteration number 15: 
+best bee => data: [0, 1, 0, 1, 0, 1, 1.0, 1, 1.0, 0, 1, 1, 1, 1.0, 1.0, 1.0, 1, 1, 1.0, 1, 0, 0, 1.0, 1, 1, 1, 1.0, 1, 1, 1, 0, 1.0, 0, 1, 1, 1, 1, 1, 1], fitness: 10513.0
+best fitness so far: 10513.0
+Execution time of iteration: 1.6891016960144043 seconds
+ 
+iteration number 16: 
+best bee => data: [0, 1, 0, 1, 0, 1, 1.0, 1, 1.0, 0, 1, 1, 1, 1.0, 1.0, 1.0, 1, 1, 1.0, 1, 0, 0, 1.0, 1, 1, 1, 1.0, 1, 1, 1, 0, 1.0, 0, 1, 1, 1, 1, 1, 1], fitness: 10513.0
+best fitness so far: 10513.0
+Execution time of iteration: 1.9466948509216309 seconds
+ 
+iteration number 17: 
+best bee => data: [0, 1, 0, 1, 0, 1, 1.0, 1, 1.0, 0, 1, 1, 1, 1.0, 1.0, 1.0, 1, 1, 1.0, 1, 0, 0, 1.0, 1, 1, 1, 1.0, 1, 1, 1, 0, 1.0, 0, 1, 1, 1, 1, 1, 1], fitness: 10513.0
+best fitness so far: 10513.0
+Execution time of iteration: 1.8411035537719727 seconds
+ 
+iteration number 18: 
+best bee => data: [0, 1, 0, 1, 0, 1, 1.0, 1, 1.0, 0, 1, 1, 1, 1.0, 1.0, 1.0, 1, 1, 1.0, 1, 0, 0, 1.0, 1, 1, 1, 1.0, 1, 1, 1, 0, 1.0, 0, 1, 1, 1, 1, 1, 1], fitness: 10513.0
+best fitness so far: 10513.0
+Execution time of iteration: 1.569857120513916 seconds
+ 
+iteration number 19: 
+best bee => data: [0, 1, 0, 1, 0, 1, 1.0, 1, 1.0, 0, 1, 1, 1, 1.0, 1.0, 1.0, 1, 1, 1.0, 1, 0, 0, 1.0, 1, 1, 1, 1.0, 1, 1, 1, 0, 1.0, 0, 1, 1, 1, 1, 1, 1], fitness: 10513.0
+best fitness so far: 10513.0
+Execution time of iteration: 1.473757266998291 seconds
+ 
+iteration number 20: 
+best bee => data: [0, 1, 0, 1, 0, 1, 1.0, 1, 1.0, 0, 1, 1, 1, 1.0, 1.0, 1.0, 1, 1, 1.0, 1, 0, 0, 1.0, 1, 1, 1, 1.0, 1, 1, 1, 0, 1.0, 0, 1, 1, 1, 1, 1, 1], fitness: 10513.0
+best fitness so far: 10513.0
+Execution time of iteration: 1.5555837154388428 seconds
+ 
+iteration number 21: 
+best bee => data: [0, 1, 0, 1, 0, 1, 1.0, 1, 1.0, 0, 1, 1, 1, 1.0, 1.0, 1.0, 1, 1, 1.0, 1, 0, 0, 1.0, 1, 1, 1, 1.0, 1, 1, 1, 0, 1.0, 0, 1, 1, 1, 1, 1, 1], fitness: 10513.0
+best fitness so far: 10513.0
+Execution time of iteration: 1.568666696548462 seconds
+ 
+iteration number 22: 
+best bee => data: [0, 1, 0, 1, 0, 1, 1.0, 1, 1.0, 0, 1, 1, 1, 1.0, 1.0, 1.0, 1, 1, 1.0, 1, 0, 0, 1.0, 1, 1, 1, 1.0, 1, 1, 1, 0, 1.0, 0, 1, 1, 1, 1, 1, 1], fitness: 10513.0
+best fitness so far: 10513.0
+Execution time of iteration: 1.4345765113830566 seconds
+ 
+iteration number 23: 
+best bee => data: [1.0, 0, 0, 1.0, 0.0, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1.0, 0, 1, 1, 1, 0, 1.0, 1], fitness: 10520.0
+best fitness so far: 10520.0
+Execution time of iteration: 1.6928160190582275 seconds
+ 
+iteration number 24: 
+best bee => data: [1.0, 0.0, 0.0, 1.0, 0.0, 1.0, 1.0, 1.0, 0.0, 0, 1.0, 0, 1, 1.0, 1.0, 1, 1.0, 0, 1.0, 1, 1, 1.0, 1.0, 0, 1.0, 1, 1, 0, 1.0, 0, 1, 1, 1, 1, 1.0, 1, 1.0, 1.0, 1.0], fitness: 10525.0
+best fitness so far: 10525.0
+Execution time of iteration: 1.5862510204315186 seconds
+ 
+iteration number 25: 
+best bee => data: [1.0, 0.0, 0.0, 1.0, 0.0, 1.0, 1.0, 1.0, 0.0, 0, 1.0, 0, 1, 1.0, 1.0, 1, 1.0, 0, 1.0, 1, 1, 1.0, 1.0, 0, 1.0, 1, 1, 0, 1.0, 0, 1, 1, 1, 1, 1.0, 1, 1.0, 1.0, 1.0], fitness: 10525.0
+best fitness so far: 10525.0
+Execution time of iteration: 1.4460792541503906 seconds
+ 
+iteration number 26: 
+best bee => data: [1.0, 0.0, 0.0, 1.0, 0.0, 1.0, 1.0, 1.0, 0.0, 0, 1.0, 0, 1, 1.0, 1.0, 1, 1.0, 0, 1.0, 1, 1, 1.0, 1.0, 0, 1.0, 1, 1, 0, 1.0, 0, 1, 1, 1, 1, 1.0, 1, 1.0, 1.0, 1.0], fitness: 10525.0
+best fitness so far: 10525.0
+Execution time of iteration: 1.3660638332366943 seconds
+ 
+iteration number 27: 
+best bee => data: [1.0, 0.0, 0.0, 1.0, 0.0, 1.0, 1.0, 1.0, 0.0, 0, 1.0, 0, 1, 1.0, 1.0, 1, 1.0, 0, 1.0, 1, 1, 1.0, 1.0, 0, 1.0, 1, 1, 0, 1.0, 0, 1, 1, 1, 1, 1.0, 1, 1.0, 1.0, 1.0], fitness: 10525.0
+best fitness so far: 10525.0
+Execution time of iteration: 1.8358397483825684 seconds
+ 
+iteration number 28: 
+best bee => data: [1.0, 0.0, 0.0, 1.0, 0.0, 1.0, 1.0, 1.0, 0.0, 0, 1.0, 0, 1, 1.0, 1.0, 1, 1.0, 0, 1.0, 1, 1, 1.0, 1.0, 0, 1.0, 1, 1, 0, 1.0, 0, 1, 1, 1, 1, 1.0, 1, 1.0, 1.0, 1.0], fitness: 10525.0
+best fitness so far: 10525.0
+Execution time of iteration: 1.6244595050811768 seconds
+ 
+iteration number 29: 
+best bee => data: [1.0, 0.0, 0.0, 1.0, 0.0, 1.0, 1.0, 1.0, 0.0, 0, 1.0, 0, 1, 1.0, 1.0, 1, 1.0, 0, 1.0, 1, 1, 1.0, 1.0, 0, 1.0, 1, 1, 0, 1.0, 0, 1, 1, 1, 1, 1.0, 1, 1.0, 1.0, 1.0], fitness: 10525.0
+best fitness so far: 10525.0
+Execution time of iteration: 1.4283082485198975 seconds
+ 
+iteration number 30: 
+best bee => data: [1, 0, 0, 1, 0, 1, 1.0, 1, 1, 0, 1.0, 0.0, 1, 1, 1.0, 1.0, 1, 0, 1, 1, 1, 1, 1, 0, 1, 1, 1.0, 1.0, 1, 1, 1.0, 1.0, 1, 0.0, 0, 1.0, 1.0, 1.0, 1.0], fitness: 10536.0
+best fitness so far: 10536.0
+Execution time of iteration: 1.553222417831421 seconds
+ 
+iteration number 31: 
+best bee => data: [1, 0, 0, 1, 0, 1, 1.0, 1, 1, 0, 1.0, 0.0, 1, 1, 1.0, 1.0, 1, 0, 1, 1, 1, 1, 1, 0, 1, 1, 1.0, 1.0, 1, 1, 1.0, 1.0, 1, 0.0, 0, 1.0, 1.0, 1.0, 1.0], fitness: 10536.0
+best fitness so far: 10536.0
+Execution time of iteration: 1.5009994506835938 seconds
+ 
+iteration number 32: 
+best bee => data: [1, 0, 0, 1, 0, 1, 1.0, 1, 1, 0, 1.0, 0.0, 1, 1, 1.0, 1.0, 1, 0, 1, 1, 1, 1, 1, 0, 1, 1, 1.0, 1.0, 1, 1, 1.0, 1.0, 1, 0.0, 0, 1.0, 1.0, 1.0, 1.0], fitness: 10536.0
+best fitness so far: 10536.0
+Execution time of iteration: 1.5524003505706787 seconds
+ 
+iteration number 33: 
+best bee => data: [1, 0, 0, 1, 0, 1, 1.0, 1, 1, 0, 1.0, 0.0, 1, 1, 1.0, 1.0, 1, 0, 1, 1, 1, 1, 1, 0, 1, 1, 1.0, 1.0, 1, 1, 1.0, 1.0, 1, 0.0, 0, 1.0, 1.0, 1.0, 1.0], fitness: 10536.0
+best fitness so far: 10536.0
+Execution time of iteration: 1.5189969539642334 seconds
+ 
+iteration number 34: 
+best bee => data: [1, 0, 0, 1, 0, 1, 1.0, 1, 1, 0, 1.0, 0.0, 1, 1, 1.0, 1.0, 1, 0, 1, 1, 1, 1, 1, 0, 1, 1, 1.0, 1.0, 1, 1, 1.0, 1.0, 1, 0.0, 0, 1.0, 1.0, 1.0, 1.0], fitness: 10536.0
+best fitness so far: 10536.0
+Execution time of iteration: 1.5033154487609863 seconds
+ 
+iteration number 35: 
+best bee => data: [1, 0, 0, 1, 0, 1, 1.0, 1, 1, 0, 1.0, 0.0, 1, 1, 1.0, 1.0, 1, 0, 1, 1, 1, 1, 1, 0, 1, 1, 1.0, 1.0, 1, 1, 1.0, 1.0, 1, 0.0, 0, 1.0, 1.0, 1.0, 1.0], fitness: 10536.0
+best fitness so far: 10536.0
+Execution time of iteration: 1.6073272228240967 seconds
+ 
+iteration number 36: 
+best bee => data: [1, 0, 0, 1, 0, 1, 1.0, 1, 1, 0, 1.0, 0.0, 1, 1, 1.0, 1.0, 1, 0, 1, 1, 1, 1, 1, 0, 1, 1, 1.0, 1.0, 1, 1, 1.0, 1.0, 1, 0.0, 0, 1.0, 1.0, 1.0, 1.0], fitness: 10536.0
+best fitness so far: 10536.0
+Execution time of iteration: 1.3758766651153564 seconds
+ 
+iteration number 37: 
+best bee => data: [1, 0, 0, 1, 0, 1, 1.0, 1, 1, 0, 1.0, 0.0, 1, 1, 1.0, 1.0, 1, 0, 1, 1, 1, 1, 1, 0, 1, 1, 1.0, 1.0, 1, 1, 1.0, 1.0, 1, 0.0, 0, 1.0, 1.0, 1.0, 1.0], fitness: 10536.0
+best fitness so far: 10536.0
+Execution time of iteration: 1.2527406215667725 seconds
+ 
+iteration number 38: 
+best bee => data: [1, 0, 0, 1, 0, 1, 1.0, 1, 1, 0, 1.0, 0.0, 1, 1, 1.0, 1.0, 1, 0, 1, 1, 1, 1, 1, 0, 1, 1, 1.0, 1.0, 1, 1, 1.0, 1.0, 1, 0.0, 0, 1.0, 1.0, 1.0, 1.0], fitness: 10536.0
+best fitness so far: 10536.0
+Execution time of iteration: 1.6694989204406738 seconds
+ 
+iteration number 39: 
+best bee => data: [1, 0, 0, 1, 0, 1, 1.0, 1, 1, 0, 1.0, 0.0, 1, 1, 1.0, 1.0, 1, 0, 1, 1, 1, 1, 1, 0, 1, 1, 1.0, 1.0, 1, 1, 1.0, 1.0, 1, 0.0, 0, 1.0, 1.0, 1.0, 1.0], fitness: 10536.0
+best fitness so far: 10536.0
+Execution time of iteration: 1.4492411613464355 seconds
+ 
+iteration number 40: 
+best bee => data: [1, 0, 0, 1, 0, 1, 1.0, 1, 1, 0, 1.0, 0.0, 1, 1, 1.0, 1.0, 1, 0, 1, 1, 1, 1, 1, 0, 1, 1, 1.0, 1.0, 1, 1, 1.0, 1.0, 1, 0.0, 0, 1.0, 1.0, 1.0, 1.0], fitness: 10536.0
+best fitness so far: 10536.0
+Execution time of iteration: 1.528925895690918 seconds
+ 
+iteration number 41: 
+best bee => data: [1, 0, 0, 1, 0, 1, 1.0, 1, 1, 0, 1.0, 0.0, 1, 1, 1.0, 1.0, 1, 0, 1, 1, 1, 1, 1, 0, 1, 1, 1.0, 1.0, 1, 1, 1.0, 1.0, 1, 0.0, 0, 1.0, 1.0, 1.0, 1.0], fitness: 10536.0
+best fitness so far: 10536.0
+Execution time of iteration: 1.6283175945281982 seconds
+ 
+iteration number 42: 
+best bee => data: [1, 0, 0, 1, 0, 1, 1.0, 1, 1, 0, 1.0, 0.0, 1, 1, 1.0, 1.0, 1, 0, 1, 1, 1, 1, 1, 0, 1, 1, 1.0, 1.0, 1, 1, 1.0, 1.0, 1, 0.0, 0, 1.0, 1.0, 1.0, 1.0], fitness: 10536.0
+best fitness so far: 10536.0
+Execution time of iteration: 1.6780881881713867 seconds
+ 
+iteration number 43: 
+best bee => data: [1, 0.0, 0, 1.0, 0.0, 1, 0, 1, 1, 0, 1.0, 0.0, 1, 1, 1.0, 1.0, 1, 0, 1, 1, 1, 1, 1, 0, 1, 1, 1.0, 1.0, 1, 1, 1.0, 1.0, 1, 0.0, 1, 1.0, 1.0, 1.0, 1.0], fitness: 10539.0
+best fitness so far: 10539.0
+Execution time of iteration: 1.6149306297302246 seconds
+ 
+iteration number 44: 
+best bee => data: [1, 0.0, 0, 1.0, 0.0, 1, 0, 1, 1, 0, 1.0, 0.0, 1, 1, 1.0, 1.0, 1, 0, 1, 1, 1, 1, 1, 0, 1, 1, 1.0, 1.0, 1, 1, 1.0, 1.0, 1, 0.0, 1, 1.0, 1.0, 1.0, 1.0], fitness: 10539.0
+best fitness so far: 10539.0
+Execution time of iteration: 1.7925684452056885 seconds
+ 
+iteration number 45: 
+best bee => data: [1, 0.0, 0, 1.0, 0.0, 1, 0, 1, 1, 0, 1.0, 0.0, 1, 1, 1.0, 1.0, 1, 0, 1, 1, 1, 1, 1, 0, 1, 1, 1.0, 1.0, 1, 1, 1.0, 1.0, 1, 0.0, 1, 1.0, 1.0, 1.0, 1.0], fitness: 10539.0
+best fitness so far: 10539.0
+Execution time of iteration: 1.531712293624878 seconds
+ 
+iteration number 46: 
+best bee => data: [1, 1.0, 0, 1.0, 0.0, 1, 0.0, 1.0, 1.0, 0, 1.0, 0.0, 1, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 0.0, 1.0, 0.0, 1, 1.0, 1, 1, 1, 1.0, 1.0, 1.0, 1.0, 0, 1.0, 1, 1.0, 1, 1.0, 1.0], fitness: 10570.0
+best fitness so far: 10570.0
+Execution time of iteration: 1.7056751251220703 seconds
+ 
+iteration number 47: 
+best bee => data: [1, 1.0, 0, 1.0, 0.0, 1, 0.0, 1.0, 1.0, 0, 1.0, 0.0, 1, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 0.0, 1.0, 0.0, 1, 1.0, 1, 1, 1, 1.0, 1.0, 1.0, 1.0, 0, 1.0, 1, 1.0, 1, 1.0, 1.0], fitness: 10570.0
+best fitness so far: 10570.0
+Execution time of iteration: 1.5475924015045166 seconds
+ 
+iteration number 48: 
+best bee => data: [1, 1.0, 0, 1.0, 0.0, 1, 0.0, 1.0, 1.0, 0, 1.0, 0.0, 1, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 0.0, 1.0, 0.0, 1, 1.0, 1, 1, 1, 1.0, 1.0, 1.0, 1.0, 0, 1.0, 1, 1.0, 1, 1.0, 1.0], fitness: 10570.0
+best fitness so far: 10570.0
+Execution time of iteration: 1.481783151626587 seconds
+ 
+iteration number 49: 
+best bee => data: [1, 1.0, 0, 1.0, 0.0, 1, 0.0, 1.0, 1.0, 0, 1.0, 0.0, 1, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 0.0, 1.0, 0.0, 1, 1.0, 1, 1, 1, 1.0, 1.0, 1.0, 1.0, 0, 1.0, 1, 1.0, 1, 1.0, 1.0], fitness: 10570.0
+best fitness so far: 10570.0
+Execution time of iteration: 1.4311614036560059 seconds
+ 
+iteration number 50: 
+best bee => data: [1, 1.0, 0, 1.0, 0.0, 1, 0.0, 1.0, 1.0, 0, 1.0, 0.0, 1, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 0.0, 1.0, 0.0, 1, 1.0, 1, 1, 1, 1.0, 1.0, 1.0, 1.0, 0, 1.0, 1, 1.0, 1, 1.0, 1.0], fitness: 10570.0
+best fitness so far: 10570.0
+Execution time of iteration: 1.295088529586792 seconds
+ 
+iteration number 51: 
+best bee => data: [1, 0, 0.0, 1.0, 0, 1, 1.0, 1, 1.0, 0, 1.0, 0.0, 1, 0, 1, 1.0, 1.0, 0.0, 1.0, 1.0, 1, 1, 1, 0, 1, 1.0, 1, 1, 1, 1.0, 1, 1.0, 1.0, 0, 1, 1, 1.0, 1.0, 1], fitness: 10582.0
+best fitness so far: 10582.0
+Execution time of iteration: 1.654810905456543 seconds
+ 
+iteration number 52: 
+best bee => data: [1, 0, 0.0, 1.0, 0, 1, 1.0, 1, 1.0, 0, 1.0, 0.0, 1, 0, 1, 1.0, 1.0, 0.0, 1.0, 1.0, 1, 1, 1, 0, 1, 1.0, 1, 1, 1, 1.0, 1, 1.0, 1.0, 0, 1, 1, 1.0, 1.0, 1], fitness: 10582.0
+best fitness so far: 10582.0
+Execution time of iteration: 1.5453979969024658 seconds
+ 
+iteration number 53: 
+best bee => data: [1, 0, 0.0, 1.0, 0, 1, 1.0, 1, 1.0, 0, 1.0, 0.0, 1, 0, 1, 1.0, 1.0, 0.0, 1.0, 1.0, 1, 1, 1, 0, 1, 1.0, 1, 1, 1, 1.0, 1, 1.0, 1.0, 0, 1, 1, 1.0, 1.0, 1], fitness: 10582.0
+best fitness so far: 10582.0
+Execution time of iteration: 1.5415430068969727 seconds
+ 
+iteration number 54: 
+best bee => data: [1, 0, 0.0, 1.0, 0, 1, 1.0, 1, 1.0, 0, 1.0, 0.0, 1, 0, 1, 1.0, 1.0, 0.0, 1.0, 1.0, 1, 1, 1, 0, 1, 1.0, 1, 1, 1, 1.0, 1, 1.0, 1.0, 0, 1, 1, 1.0, 1.0, 1], fitness: 10582.0
+best fitness so far: 10582.0
+Execution time of iteration: 1.7301270961761475 seconds
+ 
+iteration number 55: 
+best bee => data: [1, 0, 0.0, 1.0, 0, 1, 1.0, 1, 1.0, 0, 1.0, 0.0, 1, 0, 1, 1.0, 1.0, 0.0, 1.0, 1.0, 1, 1, 1, 0, 1, 1.0, 1, 1, 1, 1.0, 1, 1.0, 1.0, 0, 1, 1, 1.0, 1.0, 1], fitness: 10582.0
+best fitness so far: 10582.0
+Execution time of iteration: 1.7405667304992676 seconds
+ 
+iteration number 56: 
+best bee => data: [1, 0, 0.0, 1.0, 0, 1, 1.0, 1, 1.0, 0, 1.0, 0.0, 1, 0, 1, 1.0, 1.0, 0.0, 1.0, 1.0, 1, 1, 1, 0, 1, 1.0, 1, 1, 1, 1.0, 1, 1.0, 1.0, 0, 1, 1, 1.0, 1.0, 1], fitness: 10582.0
+best fitness so far: 10582.0
+Execution time of iteration: 1.6020519733428955 seconds
+ 
+iteration number 57: 
+best bee => data: [1, 0, 0.0, 1.0, 0, 1, 1.0, 1, 1.0, 0, 1.0, 0.0, 1, 0, 1, 1.0, 1.0, 0.0, 1.0, 1.0, 1, 1, 1, 0, 1, 1.0, 1, 1, 1, 1.0, 1, 1.0, 1.0, 0, 1, 1, 1.0, 1.0, 1], fitness: 10582.0
+best fitness so far: 10582.0
+Execution time of iteration: 1.78047513961792 seconds
+ 
+iteration number 58: 
+best bee => data: [1, 0, 0, 1, 0, 1.0, 1, 1, 0.0, 0, 1, 0, 1.0, 1, 1.0, 1.0, 1.0, 1, 1.0, 0, 1, 0, 1, 1, 0, 1, 1, 1, 1, 1.0, 1, 1.0, 1, 1.0, 1, 0, 1, 1.0, 1], fitness: 10588.0
+best fitness so far: 10588.0
+Execution time of iteration: 1.7347877025604248 seconds
+ 
+iteration number 59: 
+best bee => data: [1, 0, 0, 1, 0, 1.0, 1, 1, 0.0, 0, 1, 0, 1.0, 1, 1.0, 1.0, 1.0, 1, 1.0, 0, 1, 0, 1, 1, 0, 1, 1, 1, 1, 1.0, 1, 1.0, 1, 1.0, 1, 0, 1, 1.0, 1], fitness: 10588.0
+best fitness so far: 10588.0
+Execution time of iteration: 1.6240859031677246 seconds
+ 
+iteration number 60: 
+best bee => data: [1, 0, 0, 1, 0, 1.0, 1, 1, 0.0, 0, 1, 0, 1.0, 1, 1.0, 1.0, 1.0, 1, 1.0, 0, 1, 0, 1, 1, 0, 1, 1, 1, 1, 1.0, 1, 1.0, 1, 1.0, 1, 0, 1, 1.0, 1], fitness: 10588.0
+best fitness so far: 10588.0
+Execution time of iteration: 1.4553537368774414 seconds
+ 
+iteration number 61: 
+best bee => data: [1, 0, 0, 1, 0, 1.0, 1, 1, 0.0, 0, 1, 0, 1.0, 1, 1.0, 1.0, 1.0, 1, 1.0, 0, 1, 0, 1, 1, 0, 1, 1, 1, 1, 1.0, 1, 1.0, 1, 1.0, 1, 0, 1, 1.0, 1], fitness: 10588.0
+best fitness so far: 10588.0
+Execution time of iteration: 1.5725595951080322 seconds
+ 
+iteration number 62: 
+best bee => data: [1, 0, 0, 1, 0, 1.0, 1, 1, 0.0, 0, 1, 0, 1.0, 1, 1.0, 1.0, 1.0, 1, 1.0, 0, 1, 0, 1, 1, 0, 1, 1, 1, 1, 1.0, 1, 1.0, 1, 1.0, 1, 0, 1, 1.0, 1], fitness: 10588.0
+best fitness so far: 10588.0
+Execution time of iteration: 1.5310697555541992 seconds
+ 
+FINAL RESULT 
+ 
+the best final Bee => 
+data: [1, 0, 0, 1, 0, 1.0, 1, 1, 0.0, 0, 1, 0, 1.0, 1, 1.0, 1.0, 1.0, 1, 1.0, 0, 1, 0, 1, 1, 0, 1, 1, 1, 1, 1.0, 1, 1.0, 1, 1.0, 1, 0, 1, 1.0, 1], fitness: 10588.0 
+the average fitness of all: 10523.322580645161 
+ 
+Execution time of all: 100.78281211853027 seconds 
+ 
+------------------------ 
+COMPARE ANSWER 
+ 
+real answer = 10618.0
+my answer = 10588.0 
+gap = 30.0
+gap percent = 0.28253908457336596
+ 
+------------------------ 
+PARAMETERS 
+ 
+Number of Employed Bees = 1000
+Number of Onlooker Bees = 100
+Max improvement try = 50
+cross_over type = one_point
+Probblity of cross-over = 0.7
+Probblity of mutation = 2
+K tournoment percent = 0.1
+Precedure Type = Roulette Wheel
+Number of ABC algorithm's iterations = 63
+Limited Time = 100

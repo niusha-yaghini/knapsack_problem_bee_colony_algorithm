@@ -28,39 +28,14 @@ to make a random valid new bee and add it to our "population"
 
 -----------------------------------------------------------------------------------
 
- the differences between this one and the version 01 one is that after cross over and mutation we do another logic as below:
-
-         # after cross-over and mutation if the answer was feasible:
-            # 1- we check the improvement, if there wasn't any, we pass new_bee to "demon_action" function,
-                    # but if there was a improvement we rise the change_flag
-        # if the answer was infeasible:
-            # 1- we pass it to the "make_feasible" function, to make the answer feasible
-            # 2- then we pass new_bee to "demon_action" function
-
-        # after the above logic we would have a 1-"feasible and improvemented answer" or a 
-                                              # 2-"feasible and don't know the improvement answer"
-        # so we check the improvement again 
+ the differences between this one and the version 02:
+    the structure of how heuristic runs is a little bit different, it has been shown inthe flowchats
 
 
+    "demon_action" function has become "set_zero_to_one" function
 
-        and changed the structure of "make_feasible" function, with numpy
+    there has been implemented a function named "set_one_to_zero" which the "make_feasible" function is using it
 
-        and changed the structure of "demon_action" function, with numpy
+    
 
-        and changed the structure of "feasiblity_check" function, with numpy
-
-        and changed the structure of "scout" function, with numpy
-
-        and changed the structure of "calculating_fitness" function, with numpy
-
-        and changed the structure of "cross over -> replacement_terms" function, with numpy
-
-
-
-        add "heuristic_iteration_num" variable to the algorithm -> it iterate the heuristic part of algorithm (the heuristic part is the new logic that has been add to the algorithm and has been explained above)
-
-
-        editing the way that code reads enteries for mknapcb examples
-
-
-        ![alt text](image-1.png)
+    ![alt text](image.png)

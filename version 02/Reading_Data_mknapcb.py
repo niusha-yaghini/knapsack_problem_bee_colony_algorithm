@@ -1,27 +1,37 @@
 import numpy as np
+import math
 
-def Reading(file_name):
-    data = open(f"{file_name}", "r")
+def Reading(file_name, example_amount):
+    
+    data = open(file_name, "r")
+    data.readline()
     
     info = data.readline().split(" ")
     nI = int(info[1])
     nK = int(info[2])
     
+    items_amount = math.ceil(nI/7)
+    knapsacks_amount = math.ceil(nK/7)
+    
+    line_to_pass_amount = example_amount * (((1+nK) * math.ceil(nI/7)) + math.ceil(nK/7) + 1)
+    for i in range(line_to_pass_amount):
+        data.readline()
+    
     Profits = []
-    for p in range(72):
+    for p in range(items_amount):
         pro = [float(x) for x in data.readline().split(" ") if x.strip()]
         Profits.extend(pro)
         
     Weights = []
     for knapsack in range(nK):
         Weight = []
-        for w in range(72):
+        for w in range(items_amount):
             wei = [float(x) for x in data.readline().split(" ") if x.strip()]
             Weight.extend(wei)
         Weights.append(Weight)
                 
     Capacity = []
-    for c in range(71):
+    for c in range(knapsacks_amount):
         cap = [float(x) for x in data.readline().split(" ") if x.strip()]
         Capacity.extend(cap)
 
