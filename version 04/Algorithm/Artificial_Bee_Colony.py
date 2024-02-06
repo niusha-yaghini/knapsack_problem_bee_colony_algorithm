@@ -7,7 +7,7 @@ class ABC_algorithm():
     # artificial bee colony algorithm 
 
     def __init__(self, population_num, nK, nI, Capacity, Profits, Weights, onlooker_bees_num, Max_imporovement_try, 
-                    pc, pm, k_tournomet_percent, percedure_type, p_setZero, heuristic_iteration_num):
+                    pc, pm, k_tournomet_percent, percedure_type, cross_over_type, p_setZero, heuristic_iteration_num):
         
         self.employed_bees_num = population_num
         self.knapsacks = nK
@@ -23,6 +23,7 @@ class ABC_algorithm():
         self.percedure_type = percedure_type
         self.set_to_zero_probability = p_setZero
         self.heuristic_iteration_num = heuristic_iteration_num
+        self.cross_over_type = cross_over_type
           
     def employed_bees(self, population):
         # making initial random answers (equal to amount of employed bees number)
@@ -73,7 +74,6 @@ class ABC_algorithm():
         capacities = np.sum(bee_data_np * weights_np, axis=1)
         # capacities = np.sum(bee.data * self.weights, axis=1)
         return np.all(capacities <= self.capacity)
-          
              
     def onlooker_bees(self, population):
         # by rolette wheel precedure we do "onlooker_bees_num" times cross_over and mutation,
@@ -102,7 +102,6 @@ class ABC_algorithm():
                 Bees.Bee._calculating_fitness(bee, self.items, self.profits)
             else:
                 bee.improvement_try += 1
-                       
                                                         
     def scout_bees(self, population):
         # in here we select all bees that have a improvement_try larger than max_improvement try,
@@ -116,7 +115,6 @@ class ABC_algorithm():
 
         population = [bee for bee in population if bee not in delete_bees]
         population.extend(new_bees)
-               
                     
     def _try_for_improvement(self, population, bee):
         # we do the cross over and mutation here
@@ -126,20 +124,24 @@ class ABC_algorithm():
         new_bee = copy.deepcopy(bee)
         
         # doing the cross over on selected bee and a neighbor (that will be handled in _cross_over)
-        self._cross_over_one_point(population, new_bee)
+        if(self.cross_over_type == "one_point"):
+            self._cross_over_one_point(population, new_bee)
+        elif(self.cross_over_type == "uniform"):
+            self._cross_over(population, new_bee)
         
         # doing the mutation on selected bee
         self._mutation(new_bee) 
         
+        # if the answer of cross-over and mutation wasn't feasible, we first make it feasible
+        # then we pass it to the heuristic algorithm
+        if(self._feasiblity_check(new_bee)==False):
+            self.make_feasible(new_bee)
+        
         # running the "heuristic_algorithm" in amount of "heuristic_iteration_num" variable
-        change_flag = self.heuristic_algorithm(bee, new_bee, change_flag)
+        self.heuristic_algorithm(new_bee)
                                     
-        # after the above logic we would have:
-            # 1)a "feasible and improvemented answer" or
-            # 2)a "feasible and don't know the improvement answer"
-        # so we check the improvement again 
-        # after "demon_action" we might have improvement that has not been check
-        if(change_flag==False and self._improvement_check(bee, new_bee)==True):
+        # after coming out of heuristic algorithm we would defenitly have a feasible answer
+        if(self._improvement_check(bee, new_bee)):
             change_flag = True     
             
         # after all things that we done to the bee, we check that if the new_bee is going to be replaced with the original bee or what:)
@@ -148,28 +150,16 @@ class ABC_algorithm():
 
         return change_flag    
     
-    def heuristic_algorithm(self, bee, new_bee, change_flag): 
-        # in here if the answer was feasible:
-            # 1) we check the improvement, if there wasn't any, we pass new_bee to "demon_action" function,
-                # but if there was a improvement we rise the change_flag
-        # if the answer was infeasible:
-            # 1) we pass it to the "make_feasible" function, to make the answer feasible
-            # 2) then we pass new_bee to "demon_action" function
+    def heuristic_algorithm(self, new_bee): 
+        # in here in amount of "heuristic_iteration_num" variable
                 
         for iter in range(self.heuristic_iteration_num):
-            if(self._feasiblity_check(new_bee)):
-                if(self._improvement_check(bee, new_bee)==False):
-                    self.demon_action(new_bee)
-                else: 
-                    change_flag = True
-            else:
-                # after coming out of this else, we definitely have a feasible answer
-                self.make_feasible(new_bee)
-                self.demon_action(new_bee)
-                    
-        return change_flag
-    
-    def demon_action(self, bee):
+            # with a probablity
+            self.set_one_to_zero(new_bee)
+            # until it stays feasible
+            self.set_zero_to_one(new_bee)
+                        
+    def set_zero_to_one(self, bee):
         # in here we randomly choose a item and turn 0s, to 1s until it stays feasible
         feasiblity_flag = True
         demon_bee = copy.deepcopy(bee)
@@ -189,15 +179,17 @@ class ABC_algorithm():
         
         feasiblity_flag = False
         while(feasiblity_flag==False):  
-            # a list of random numbers  
-            random_numbers = np.random.random(size=self.items)
-            # a boolean
-            zero_mask = random_numbers <= self.set_to_zero_probability
-            # it checks where ever the random_number is equal or less than set_to_zero_probability, it set that index of bee.data to 0
-            bee.data = np.where(zero_mask, 0, bee.data)
-            
+            self.set_one_to_zero(bee)
             feasiblity_flag = self._feasiblity_check(bee)
             
+    def set_one_to_zero(self, bee):
+        # a list of random numbers  
+        random_numbers = np.random.random(size=self.items)
+        # a boolean
+        zero_mask = random_numbers <= self.set_to_zero_probability
+        # it checks where ever the random_number is equal or less than set_to_zero_probability, it set that index of bee.data to 0
+        bee.data = np.where(zero_mask, 0, bee.data)
+                    
     def _tournoment(self, population):
         # choosing our bee with tournoment procedure with "k_tournoment" variable
         
@@ -224,7 +216,6 @@ class ABC_algorithm():
             current += bee.fitness
             if current >= pick:
                 return bee         
-               
                 
     def _cross_over_one_point(self, population, bee):
         # for each answer that employed bees have made, we select a radom neighbor
@@ -243,13 +234,11 @@ class ABC_algorithm():
             
             self.replace_terms(bee, neighbor_bee, random_pos)
         
-        
     def replace_terms(self, bee, neighbor_bee, random_pos):
         # in here we change parts of our "bee.data" base on choosed position,
         # the first part comes from bee.data, and the second part comes from neighbor.data 
         
         bee.data[random_pos:] = neighbor_bee.data[random_pos:].copy()
-                
                 
     def _cross_over(self, population, bee):
         # for each answer that employed bees have made, we select a radom neighbor
@@ -289,14 +278,23 @@ class ABC_algorithm():
         return True if new_bee.fitness>current_bee.fitness else False
     
     def finding_best_bee(self, population):
-        # finding the best solution
-        
-        best_fitness = 0
-        best_bee = None
-        for bee in population:
+        fitness_values = np.zeros(len(population))
+
+        for i, bee in enumerate(population):
             Bees.Bee._calculating_fitness(bee, self.items, self.profits)
-            if(bee.fitness>best_fitness):
-                best_fitness = bee.fitness
-                best_bee = bee
+            fitness_values[i] = bee.fitness
+
+        best_index = np.argmax(fitness_values)
+        best_bee = population[best_index]
+        best_fitness = fitness_values[best_index]
 
         return best_bee, best_fitness
+        # best_fitness = 0
+        # best_bee = None
+        # for bee in population:
+        #     Bees.Bee._calculating_fitness(bee, self.items, self.profits)
+        #     if(bee.fitness>best_fitness):
+        #         best_fitness = bee.fitness
+        #         best_bee = bee
+
+        # return best_bee, best_fitness
