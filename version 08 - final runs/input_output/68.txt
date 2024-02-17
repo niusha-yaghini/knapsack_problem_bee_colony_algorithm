@@ -1,0 +1,50 @@
+Modified Hybrid Artificial Bee Colony Algorithm on knapsack
+ 
+FINAL RESULT 
+ 
+the best final Bee => 
+data: [1. 0. 1. 0. 1. 1. 0. 1. 1. 0. 1. 0. 1. 0. 1. 1. 1. 0. 1. 1. 1. 1. 1. 1.
+ 0. 0. 1. 0. 0. 0. 0. 1. 1. 0. 0. 0. 0. 1. 0. 1. 0. 0. 0. 1. 0. 0. 1. 1.
+ 0. 1. 1. 0. 1. 1. 1. 1. 0. 0. 0. 0. 0. 0. 1. 1. 1. 0. 0. 0. 1. 0. 1. 1.
+ 1. 0. 0. 1. 0. 0. 0. 0. 0. 1. 1. 1. 0. 0. 0. 1. 0. 1. 0. 1. 0. 1. 1. 1.
+ 1. 0. 0. 1. 1. 0. 1. 0. 1. 0. 0. 1. 1. 0. 0. 1. 0. 1. 1. 0. 1. 1. 0. 0.
+ 1. 0. 1. 1. 0. 1. 0. 0. 1. 1. 1. 1. 0. 0. 0. 1. 1. 0. 1. 0. 0. 1. 0. 1.
+ 0. 0. 0. 1. 1. 1. 1. 1. 1. 0. 1. 1. 0. 0. 0. 1. 0. 0. 0. 0. 1. 1. 1. 1.
+ 0. 1. 1. 0. 0. 1. 0. 1. 1. 0. 1. 1. 1. 0. 0. 1. 1. 1. 1. 1. 0. 1. 0. 0.
+ 0. 0. 1. 0. 0. 1. 0. 0. 0. 1. 0. 0. 0. 0. 1. 1. 1. 1. 0. 0. 1. 1. 1. 1.
+ 0. 0. 0. 0. 0. 1. 1. 0. 1. 0. 0. 1. 1. 1. 0. 0. 0. 0. 1. 0. 1. 1. 1. 1.
+ 0. 0. 0. 0. 0. 1. 1. 0. 1. 1.], fitness: 108088.0 
+the average fitness of all: 106070.3373493976 
+ 
+Execution time of all: 301.0764989852905 seconds 
+ 
+------------------------ 
+COMPARE ANSWER 
+ 
+real answer = 
+my answer = 108088.0 
+------------------------ 
+PARAMETERS 
+ 
+run_id = 68
+category = mknapcb5
+problem_num = 11
+cpu_time_limit = 300
+employed_bees_num = 200
+onlooker_bees_num = 200
+max_try_improve = 50
+crossover_type = uniform
+pc_onePoint = 0.7
+pc_uniForm = 0.7
+crossover_neighbor_selection = Random
+cn_k_tournoment = 10
+pm = 0.01
+make_feasible_check = no
+onlooker_selection = Roulette Wheel
+onlooker_k_tournoment = 10
+p_scout_delete = 10
+heuristic_phase_check = yes
+heuristic_iteration_num = 50
+heuristic_selection = Roulette Wheel
+h_k_tournoment = 10
+p_set_zero = 0.05

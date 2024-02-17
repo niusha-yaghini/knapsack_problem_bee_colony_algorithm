@@ -1,0 +1,132 @@
+Modified Hybrid Artificial Bee Colony Algorithm on knapsack
+ 
+FINAL RESULT 
+ 
+the best final Bee => 
+data: [0. 1. 1. 1. 1. 0. 1. 1. 1. 0. 1. 0. 0. 0. 0. 0. 0. 1. 0. 0. 0. 0. 0. 1.
+ 0. 0. 1. 0. 1. 1. 0. 1. 0. 0. 1. 0. 0. 0. 0. 0. 0. 0. 0. 1. 0. 0. 0. 0.
+ 0. 1. 0. 0. 0. 0. 0. 0. 1. 0. 0. 0. 0. 1. 1. 0. 0. 0. 0. 0. 1. 0. 1. 0.
+ 0. 0. 0. 1. 1. 0. 1. 0. 0. 0. 0. 0. 1. 1. 0. 0. 0. 0. 0. 0. 1. 0. 0. 0.
+ 0. 0. 1. 0.], fitness: 24265.0 
+the average fitness of all: 22726.80769230769 
+ 
+Execution time of all: 60.07713603973389 seconds 
+ 
+------------------------ 
+COMPARE ANSWER 
+ 
+real answer = 
+my answer = 24265.0 
+------------------------ 
+PARAMETERS 
+ 
+run_id = 20
+category = mknapcb1
+problem_num = 0
+cpu_time_limit = 60
+employed_bees_num = 200
+onlooker_bees_num = 200
+max_try_improve = 200
+crossover_type = uniform
+pc_onePoint = 0.7
+pc_uniForm = 0.7
+crossover_neighbor_selection = Random
+cn_k_tournoment = 10
+pm = 0.01
+make_feasible_check = no
+onlooker_selection = Roulette Wheel
+onlooker_k_tournoment = 10
+p_scout_delete = 10
+heuristic_phase_check = no
+heuristic_iteration_num = 5
+heuristic_selection = Roulette Wheel
+h_k_tournoment = 10
+p_set_zero = 0.05
+Modified Hybrid Artificial Bee Colony Algorithm on knapsack
+ 
+FINAL RESULT 
+ 
+the best final Bee => 
+data: [0. 1. 0. 1. 0. 0. 1. 0. 1. 0. 1. 0. 0. 0. 0. 0. 0. 1. 0. 0. 0. 0. 0. 1.
+ 0. 0. 1. 0. 1. 1. 0. 1. 0. 0. 1. 0. 0. 0. 0. 0. 0. 0. 0. 1. 0. 0. 0. 0.
+ 0. 1. 0. 0. 0. 0. 0. 0. 1. 0. 1. 0. 0. 0. 1. 0. 0. 1. 0. 0. 1. 0. 1. 0.
+ 0. 1. 0. 0. 1. 0. 1. 0. 0. 0. 0. 1. 1. 1. 0. 0. 0. 0. 0. 1. 1. 0. 0. 0.
+ 0. 0. 1. 0.], fitness: 24254.0 
+the average fitness of all: 22457.064516129034 
+ 
+Execution time of all: 60.082355976104736 seconds 
+ 
+------------------------ 
+COMPARE ANSWER 
+ 
+real answer = 
+my answer = 24254.0 
+------------------------ 
+PARAMETERS 
+ 
+run_id = 20
+category = mknapcb1
+problem_num = 0
+cpu_time_limit = 60
+employed_bees_num = 200
+onlooker_bees_num = 200
+max_try_improve = 200
+crossover_type = uniform
+pc_onePoint = 0.7
+pc_uniForm = 0.7
+crossover_neighbor_selection = Random
+cn_k_tournoment = 50
+pm = 0.01
+make_feasible_check = no
+onlooker_selection = Roulette Wheel
+onlooker_k_tournoment = 10
+p_scout_delete = 10
+heuristic_phase_check = no
+heuristic_iteration_num = 5
+heuristic_selection = Roulette Wheel
+h_k_tournoment = 10
+p_set_zero = 0.05
+Modified Hybrid Artificial Bee Colony Algorithm on knapsack
+ 
+FINAL RESULT 
+ 
+the best final Bee => 
+data: [0. 1. 0. 1. 0. 0. 1. 0. 1. 0. 1. 0. 0. 0. 0. 0. 0. 1. 0. 0. 0. 0. 0. 1.
+ 0. 0. 1. 0. 1. 1. 0. 1. 0. 0. 1. 0. 0. 0. 0. 0. 0. 0. 0. 1. 0. 0. 0. 0.
+ 0. 1. 0. 0. 0. 0. 0. 0. 1. 0. 1. 0. 0. 0. 1. 0. 0. 1. 0. 0. 1. 0. 1. 0.
+ 0. 1. 0. 0. 1. 0. 1. 0. 0. 0. 0. 1. 1. 1. 0. 0. 0. 0. 0. 1. 1. 0. 0. 0.
+ 0. 0. 1. 0.], fitness: 24254.0 
+the average fitness of all: 22457.064516129034 
+ 
+Execution time of all: 60.08904981613159 seconds 
+ 
+------------------------ 
+COMPARE ANSWER 
+ 
+real answer = 
+my answer = 24254.0 
+------------------------ 
+PARAMETERS 
+ 
+run_id = 20
+category = mknapcb1
+problem_num = 0
+cpu_time_limit = 60
+employed_bees_num = 200
+onlooker_bees_num = 200
+max_try_improve = 200
+crossover_type = uniform
+pc_onePoint = 0.7
+pc_uniForm = 0.7
+crossover_neighbor_selection = Random
+cn_k_tournoment = 10
+pm = 0.01
+make_feasible_check = no
+onlooker_selection = Roulette Wheel
+onlooker_k_tournoment = 10
+p_scout_delete = 50
+heuristic_phase_check = no
+heuristic_iteration_num = 5
+heuristic_selection = Roulette Wheel
+h_k_tournoment = 10
+p_set_zero = 0.05

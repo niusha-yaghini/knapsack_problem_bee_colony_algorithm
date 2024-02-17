@@ -158,7 +158,17 @@ class ABC_algorithm():
             self.set_one_to_zero(new_bee)
             # until it stays feasible
             self.set_zero_to_one(new_bee)
-                        
+                      
+    def make_feasible(self, bee):
+        # in here we get a infeasible answer we want to make it feasible
+        # for a set probability named "set_to_zero_probability" we go through the answer(bee.data elements) and for each of them,
+        # we check the probability and do the change, we go through this until we reach to a feasible answer
+        
+        feasiblity_flag = False
+        while(feasiblity_flag==False):  
+            self.set_one_to_zero(bee)
+            feasiblity_flag = self._feasiblity_check(bee)
+  
     def set_zero_to_one(self, bee):
         # in here we randomly choose a item and turn 0s, to 1s until it stays feasible
         feasiblity_flag = True
@@ -171,17 +181,7 @@ class ABC_algorithm():
                 feasiblity_flag = self._feasiblity_check(demon_bee)
                 if(feasiblity_flag):
                     bee.data[x] = 1
-                
-    def make_feasible(self, bee):
-        # in here we get a infeasible answer we want to make it feasible
-        # for a set probability named "set_to_zero_probability" we go through the answer(bee.data elements) and for each of them,
-        # we check the probability and do the change, we go through this until we reach to a feasible answer
-        
-        feasiblity_flag = False
-        while(feasiblity_flag==False):  
-            self.set_one_to_zero(bee)
-            feasiblity_flag = self._feasiblity_check(bee)
-            
+                            
     def set_one_to_zero(self, bee):
         # a list of random numbers  
         random_numbers = np.random.random(size=self.items)

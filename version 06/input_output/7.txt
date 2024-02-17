@@ -1,0 +1,88 @@
+Modified Hybrid Artificial Bee Colony Algorithm on knapsack
+ 
+FINAL RESULT 
+ 
+the best final Bee => 
+data: [0. 1. 0. 0. 0. 0. 1. 1. 1. 0. 1. 0. 1. 0. 0. 1. 0. 1. 1. 0. 0. 0. 0. 1.
+ 0. 0. 1. 0. 1. 1. 0. 1. 0. 0. 1. 0. 0. 0. 0. 0. 0. 0. 0. 1. 0. 0. 0. 0.
+ 0. 1. 0. 0. 0. 0. 0. 0. 1. 0. 0. 0. 0. 1. 1. 0. 0. 1. 0. 0. 1. 0. 1. 0.
+ 0. 0. 0. 0. 1. 0. 1. 0. 0. 0. 0. 0. 1. 1. 0. 0. 0. 0. 0. 0. 1. 0. 0. 0.
+ 0. 0. 1. 0.], fitness: 24248.0 
+the average fitness of all: 22815.0 
+ 
+Execution time of all: 60.10647916793823 seconds 
+ 
+------------------------ 
+COMPARE ANSWER 
+ 
+real answer = 
+my answer = 24248.0 
+------------------------ 
+PARAMETERS 
+ 
+run_id = 7
+category = mknapcb1
+problem_num = 0
+cpu_time_limit = 60
+employed_bees_num = 200
+onlooker_bees_num = 200
+max_try_improve = 200
+crossover_type = uniform
+pc_onePoint = 0.7
+pc_uniForm = 0.7
+crossover_neighbor_selection = Random
+cn_k_tournoment = 10
+pm = 0.01
+make_feasible_check = no
+onlooker_selection = Roulette Wheel
+onlooker_k_tournoment = 10
+p_scout_delete = 5
+heuristic_phase_check = no
+heuristic_iteration_num = 5
+heuristic_selection = Roulette Wheel
+h_k_tournoment = 10
+p_set_zero = 0.05
+Modified Hybrid Artificial Bee Colony Algorithm on knapsack
+ 
+FINAL RESULT 
+ 
+the best final Bee => 
+data: [0. 1. 0. 0. 0. 0. 1. 0. 1. 0. 0. 0. 0. 0. 0. 1. 0. 1. 1. 0. 0. 0. 0. 1.
+ 0. 1. 1. 0. 1. 1. 0. 1. 0. 0. 1. 0. 0. 0. 0. 0. 0. 0. 0. 1. 0. 0. 0. 0.
+ 0. 1. 0. 0. 0. 0. 0. 0. 1. 0. 0. 0. 0. 1. 1. 0. 0. 1. 0. 0. 1. 0. 0. 0.
+ 0. 0. 0. 0. 1. 0. 1. 0. 0. 0. 0. 1. 1. 1. 0. 0. 0. 0. 0. 0. 1. 0. 1. 1.
+ 0. 0. 1. 0.], fitness: 24235.0 
+the average fitness of all: 22572.434782608696 
+ 
+Execution time of all: 60.101035594940186 seconds 
+ 
+------------------------ 
+COMPARE ANSWER 
+ 
+real answer = 
+my answer = 24235.0 
+------------------------ 
+PARAMETERS 
+ 
+run_id = 7
+category = mknapcb1
+problem_num = 0
+cpu_time_limit = 60
+employed_bees_num = 200
+onlooker_bees_num = 200
+max_try_improve = 200
+crossover_type = uniform
+pc_onePoint = 0.7
+pc_uniForm = 0.7
+crossover_neighbor_selection = Random
+cn_k_tournoment = 10
+pm = 0.01
+make_feasible_check = no
+onlooker_selection = Roulette Wheel
+onlooker_k_tournoment = 10
+p_scout_delete = 5
+heuristic_phase_check = no
+heuristic_iteration_num = 5
+heuristic_selection = Roulette Wheel
+h_k_tournoment = 10
+p_set_zero = 0.05
